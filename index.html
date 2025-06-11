@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Modified viewport for fixed desktop appearance on mobile -->
+    <meta name="viewport" content="width=1024, user-scalable=yes" />
     <title>Chhousour Leok's Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,9 +22,14 @@
                 '0%': { opacity: '0', transform: 'translateY(20px)' },
                 '100%': { opacity: '1', transform: 'translateY(0)' },
               },
+              'bounce-scroll': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
             },
             animation: {
               'fade-in-up': 'fade-in-up 0.7s ease-out forwards',
+              'bounce-scroll': 'bounce-scroll 1.5s infinite ease-in-out',
             },
           },
         },
