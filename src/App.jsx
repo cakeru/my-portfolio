@@ -130,7 +130,7 @@ const App = () => {
             <img
               src="./assets/image.jpg" // Your uploaded image
               alt="Your Profile"
-              className="max-w-xs h-auto border-4 border-blue-500 shadow-xl object-contain rounded-md"
+              className="max-w-xs h-auto border-8 border-gray-600 shadow-gray-500/50 shadow-2xl object-contain rounded-md transform hover:scale-105 transition-all duration-300" // Removed blue border, changed shadow color
               onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/200x200/4a5568/ffffff?text=Load+Fail"; }} // Fallback image on error
             />
           </div>
